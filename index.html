@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <h1>My Dream Assets</h1>
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/Bugatti-veyron.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/Bugatti-chiron.png" />
+          </div>
+          <div class="swiper-slide"><img src="Images/Mercedes-EQS.jpg" /></div>
+          <div class="swiper-slide"><img src="Images/Light house.jpg" /></div>
+          <div class="swiper-slide"><img src="Images/luxury-home.jpg" /></div>
+          <div class="swiper-slide">
+            <img src="Images/Stamford_Bridge,.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="nagivation">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

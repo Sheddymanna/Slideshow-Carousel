@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.swiper {
+  width: 80%;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.swiper-button-next,
+.swiper .swiper-button-prev {
+  color: white;
+  opacity: 0;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: blue;
+  opacity: 1;
+}
